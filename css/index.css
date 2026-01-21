@@ -73,7 +73,6 @@ body {
 }
 
 .cat-img {
-    margin-top: -360px;
     width: 100%;
     max-width: 1700px;
 }
@@ -188,12 +187,12 @@ body {
 
 .projects-card {
     display: flex;
-    flex-direction: column; 
-    background: #ffffff;
+    flex-direction: column;
+    background: #fff;
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects-card:hover {
