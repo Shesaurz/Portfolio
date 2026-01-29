@@ -5,7 +5,6 @@
 }
 
 h2 {
-    font-size: 32px;
     margin-bottom: 40px;
 }
 
@@ -38,7 +37,7 @@ h2 {
 .footer-note {
     margin-top: 35px;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .fade-in {

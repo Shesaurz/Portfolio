@@ -2,29 +2,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #ADC5E1; 
     position: sticky;
     top: 0;        
     z-index: 1000;   
     font-family: 'Montserrat', sans-serif;
-    height: 48px;
 }
 
 .header {
     font-family: 'Montserrat', serif;
     margin: 0;
-    color: #231a07;
-    font-size: 27px;
+    font-size: 2.5rem;
 }
 
 .header-buttons a {
     margin: 0 10px;
+    align-items: center;
     text-decoration: none;
     color: #231a07;
     font-weight: bolder;
     padding: 8px 16px;
-    font-size: 17px;
     transition: transform 0.5s, background 0.3s, color 0.3s;
     border-radius: 20px;
 }
@@ -49,8 +47,7 @@ body {
 
 .home {
     background-color: #f3f2f2;
-    padding: 20px;
-    min-height: 70vh;
+    padding: 40px;
 }
 
 .home h1 {
@@ -60,11 +57,10 @@ body {
 
 .home p {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 21px;
+    font-size: 1.3rem;
     text-align: center;
-    max-width: 800px;
-    margin: 20px auto;
     line-height: 1.6;
+    margin: 25px;
 }
 
 .slogan-section {
@@ -74,28 +70,26 @@ body {
 
 .cat-img {
     width: 100%;
-    max-width: 1700px;
+    margin: 10px;
 }
 
 .about {
-    padding-top: 20px;
-    height: 480px;
+    padding: 20px;
     background: linear-gradient(to bottom, #f3f2f2, #fef8d3);
     text-align: center;
 }
 
 .about h2 {
-    margin-top: 70px;
-    font-size: 32px;
+    margin-top: 40px;
 }
 
 .about p {
     padding-top: 15px;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 21px;
-    max-width: 800px;
+    font-size: 1.3rem;
     margin: 20px auto;
     line-height: 1.6;
+    margin-bottom: 50px;
 }
 
 .skills {
@@ -105,7 +99,6 @@ body {
 }
 
 .skills h2 {
-    font-size: 32px;
     margin-bottom: 50px;
     color: #231a07;
     font-weight: bold;
@@ -115,7 +108,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -126,9 +118,8 @@ body {
 .skill-category p {
     font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.3rem;
     margin-bottom: 20px;
-    color: #231a07;
 }
 
 .icons {
@@ -143,8 +134,7 @@ body {
     justify-content: center;      
     align-items: center;         
     width: 60px;                 
-    height: 60px;                
-    font-size: 28px;              
+    height: 60px;                           
     background-color: #564117;     
     color: #fff;                  
     border-radius: 50%;           
@@ -159,7 +149,6 @@ body {
 .icons span {
     font-family: 'Montserrat', serif;
     display: block;
-    font-size: 14px;
     margin-top: 10px;
     color: #231a07;
 }
@@ -172,7 +161,6 @@ body {
 }
 
 .h2-projects {
-    font-size: 32px;
     margin-bottom: 30px;
 }
 
@@ -180,8 +168,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     gap: 30px; 
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 10 auto;
     padding: 20px;
 }
 
@@ -200,18 +187,19 @@ body {
 }
 
 .project-art {
+    aspect-ratio: 16 / 9;
     width: 100%;
-    height: 250px; 
+    overflow: hidden;
 }
 
 .project-img {
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
 }
 
 .projects-info {
-    padding: 13px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -219,13 +207,13 @@ body {
 
 .h2-info {
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
 }
 
 .logo a {
     color: #231a07;
-    font-size: 28px;
+    font-size: 2rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -236,7 +224,7 @@ body {
 
 .p-info {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 15px; 
+    font-size: 1rem; 
     margin: 0 20px 12px 20px;
 }
 
@@ -244,7 +232,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 10px;
+    margin: 7px;
     align-items: center;
     justify-content: center;
 }
@@ -276,4 +264,14 @@ body {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .project-lines {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-group {
+        grid-template-columns: 1fr;
+    }
 }
