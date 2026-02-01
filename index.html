@@ -146,9 +146,14 @@
 
         <section class="projects fade-in">
             <h2 class="h2-projects">Projects</h2>
-            <section class="project-lines">
+            <div class="projects-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="filter-web">Web Development</button>
+                <button class="filter-btn" data-filter="filter-games">Games & Graphics</button>
+            </div>
 
-            <div class="projects-card fade-in">
+            <section class="project-lines">
+                <div class="projects-card fade-in filter-web">
                     <div class="project-art">
                         <img src="art/angklung1.png" class="project-img">
                     </div>
@@ -168,9 +173,9 @@
                             <span>Figma</span>
                         </div>
                     </div>
-            </div>
-
-            <div class="projects-card fade-in">
+                </div>
+                
+                <div class="projects-card fade-in filter-web">
                     <div class="project-art">
                         <img src="art/ecommerce1.png" class="project-img">
                     </div>
@@ -187,9 +192,9 @@
                             <span>Figma</span>
                         </div>
                     </div>
-            </div>
-
-            <div class="projects-card fade-in">
+                </div>
+                
+                <div class="projects-card fade-in filter-games">
                     <div class="project-art">
                         <img src="art/mice1.png" class="project-img">
                     </div>
@@ -209,7 +214,7 @@
                             <span>GitHub</span>
                         </div>
                     </div>
-            </div>
+                </div>
             </section>
         </section>
 

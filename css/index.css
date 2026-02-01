@@ -166,14 +166,52 @@ body {
 
 .project-lines {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    gap: 30px; 
-    margin: 10 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 10px auto;
     padding: 20px;
+    justify-items: center; 
+}
+
+.projects-filters {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.filter-btn {
+    color: #0b122f;
+    font-family: 'Montserrat', serif;
+    background-color: #ADC5E1;
+    border: 1.3px solid #ADC5E1;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #DDA537;
+    color: #fff;
+}
+
+.projects-card {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.projects-card.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    display: none;
 }
 
 .projects-card {
     display: flex;
+    max-width: 480px;
     flex-direction: column;
     background: #fff;
     border-radius: 30px;
