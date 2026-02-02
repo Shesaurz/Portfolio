@@ -85,3 +85,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Image slider
+document.addEventListener("click", (e) => {
+    if (!e.target.classList.contains("img-btn")) return;
+
+    const container = e.target.closest(".project-image");
+    if (!container) return;
+
+    const images = container.querySelectorAll(".project-img");
+    let index = parseInt(container.dataset.index) || 0;
+
+    index = e.target.classList.contains("next")
+        ? (index + 1) % images.length
+        : (index - 1 + images.length) % images.length;
+
+    images.forEach(img => img.classList.remove("active"));
+    images[index].classList.add("active");
+
+    container.dataset.index = index;
+});
