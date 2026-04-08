@@ -1,5 +1,39 @@
 const projects = [
   {
+    id: "cinehouse-booking-system",
+    title: "CineHouse Booking System",
+    category: "Full-Stack Developer | IS3108",
+    description:
+      "CineHouse is a full-stack cinema platform built with separate Admin and Customer portals on a shared backend.",
+    github: "",
+    images: [
+      "art/cinehouse1.png",
+      "art/cinehouse2.png",
+      "art/cinehouse3.png",
+      "art/cinehouse4.png"
+    ],
+    highlights: [
+      "Built a dual-portal architecture with role-specific interfaces: Admin Panel (EJS) for operations management and Customer Panel (React + Vite) for booking journeys.",
+      "Developed complete admin workflows for managing movies, halls, screenings, and bookings, including protected routes and session-based authentication.",
+      "Implemented customer movie discovery and screening exploration flows, with detailed movie pages and screening-level booking entry points.",
+      "Created interactive seat-map booking with hall-based row/column generation and support for seat states.",
+      "Engineered reservation-safe seat booking logic to prevent duplicate seat purchases during concurrent requests.",
+    ],
+    tools: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "EJS",
+      "REST APIs",
+      "Session Authentication",
+      "CSS",
+      "Git/GitHub"
+    ]
+  },
+  {
     id: "where-to-go-next",
     title: "Where To Go Next",
     category: "Feature Developer | IS3108 Team Project",
