@@ -1,8 +1,33 @@
 const projects = [
   {
+    id: "where-to-go-next",
+    title: "Where To Go Next",
+    category: "Feature Developer | IS3108 Team Project",
+    description:
+      "Travel planning web app featuring itinerary discovery, collaborative planning flows, and moodboard organization for trip inspiration.",
+    github: "https://github.com/chloe472/wheretogonext",
+    images: [
+      "art/wtgn1.png",
+      "art/wtgn2.png",
+      "art/wtgn3.png",
+      "art/wtgn4.png"
+    ],
+    highlights: [
+      "Designed and iterated early product flows using Figma prototypes before implementation.",
+      "Implemented the Moodboard feature end-to-end, including folder and image management.",
+      "Built structured Moodboard folder interactions to support organized trip inspiration.",
+      "Integrated AI-powered image analysis to suggest relevant destinations from user-uploaded content.",
+      "Connected frontend components to backend APIs with authenticated request handling.",
+      "Developed collaborative planning flows, including shared interactions and real-time updates.",
+      "Contributed features within a MERN stack codebase following existing architecture patterns."
+    ],
+    tools: ["React", "Vite", "JavaScript", "CSS", "Node.js", "Express", "MongoDB", "REST APIs", "Git/GitHub", "Figma"
+    ]
+  },
+  {
     id: "last-tick",
     title: "The Last Tick",
-    category: "Independent Developer",
+    category: "Independent Developer | NoPoly Game Jam 2026",
     description: "A 3D looping narrative puzzle enabling players to reconstruct sentences and trigger branching story outcomes.",
     github: "https://github.com/Shesaurz/Last-Tick",
     images: ["art/lasttick1.png","art/lasttick2.png","art/lasttick3.png","art/lasttick4.png"],
@@ -14,7 +39,7 @@ const projects = [
       "Enhanced user experience with synchronized audio, UI, and animation feedback for player actions.",
       "Programmed branching dialogue, event-driven triggers, and multiple endings based on player choices."
     ],
-    tools: ["Unity","C#","Blender","3D Systems","UI/UX Design","Animation","Audio Integration"]
+    tools: ["Unity","C#","Blender","3D Systems","UI/UX Design"," 3D Animation"]
   },
   {
     id: "blank-screen",
@@ -34,6 +59,38 @@ const projects = [
     tools: ["Unity","C#","Blender","Visual Design","User Experience (UX)","2D/3D Integration"]
   },
   {
+    id: "angklung",
+    title: "NUS Angklung Ensemble Website",
+    category: "Independent Developer",
+    description: "Responsive website showcasing events, multimedia content, and interactive elements for the ensemble.",
+    github: "https://github.com/Shesaurz/Angklung-Website",
+    images: ["art/angklung1.png","art/angklung2.png","art/angklung3.png","art/angklung4.png","art/angklung5.png"],
+    highlights: [
+      "Designed user flows and high-fidelity Figma prototypes to validate layout consistency.",
+      "Built user-facing UI/UX with animated transitions, scrolling galleries, and event-focused banners.",
+      "Developed interactive components such as flippable cards and clickable Angklung element with audio feedback.",
+      "Built responsive layouts for desktop and mobile with structured navigation, header, footer, and FAQ sections."
+    ],
+    tools: ["HTML","CSS","JavaScript","Figma","Responsive Design","UI/UX"]
+  },
+  {
+    id: "ecommerce",
+    title: "E-Commerce Web Application",
+    category: "Full-Stack Developer | Oct - Nov 2025",
+    description: "Full-stack e-commerce platform with customer shopping flows, checkout, and employee admin workflows.",
+    github: "",
+    images: ["art/ecommerce1.png","art/ecommerce2.png","art/ecommerce3.png"],
+    highlights: [
+      "Created high-fidelity Figma prototypes for shopping, checkout, and admin interaction workflows.",
+      "Built responsive front-end components for product browsing, cart, checkout, and admin dashboards.",
+      "Developed Django backend supporting user authentication, product management, order workflows, and admin user management.",
+      "Integrated front-end with backend APIs for seamless data flow and real-time updates.",
+      "Handled database modeling and queries for products, users, and orders.",
+      "Tested and iterated on front-end and backend workflows to improve usability and reliability."
+    ],
+    tools: ["Django","Python","HTML","CSS","SQL","Figma","UI/UX"]
+  },
+  {
     id: "mice-n-maven",
     title: "Mice N Maven",
     category: "Lead Developer | CP2106 Orbital (Apollo)",
@@ -49,20 +106,5 @@ const projects = [
       "Managed version control and project workflow using Git/GitHub."
     ],
     tools: ["Unity","C#","Git/GitHub","2D Game Design","UI/UX Design","Animation"]
-  },
-  {
-    id: "angklung",
-    title: "NUS Angklung Ensemble Website",
-    category: "Solo Developer",
-    description: "Responsive website showcasing events, multimedia content, and interactive elements for the ensemble.",
-    github: "https://github.com/Shesaurz/Angklung-Website",
-    images: ["art/angklung1.png","art/angklung2.png","art/angklung3.png","art/angklung4.png","art/angklung5.png"],
-    highlights: [
-      "Designed user flows and high-fidelity Figma prototypes to validate layout consistency.",
-      "Built user-facing UI/UX with animated transitions, scrolling galleries, and event-focused banners.",
-      "Developed interactive components such as flippable cards and clickable Angklung element with audio feedback.",
-      "Built responsive layouts for desktop and mobile with structured navigation, header, footer, and FAQ sections."
-    ],
-    tools: ["HTML","CSS","JavaScript","Figma","Responsive Design","UI/UX"]
   }
 ];
