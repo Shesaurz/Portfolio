@@ -1,144 +1,168 @@
 const projects = [
   {
-    id: "cinehouse-booking-system",
-    title: "CineHouse Booking System",
-    category: "Full-Stack Developer | IS3108",
-    description:
-      "CineHouse is a full-stack cinema platform built with separate Admin and Customer portals on a shared backend.",
+    id: "broken-melody",
+    title: "Broken Melody",
+    category: "Independent Developer",
+    description: "A 3D music-box puzzle prototype centered around a rotating mechanical cylinder, where players manipulate individual pins to configure and play a sequence of musical notes.",
     github: "",
-    images: [
-      "art/cinehouse1.png",
-      "art/cinehouse2.png",
-      "art/cinehouse3.png",
-      "art/cinehouse4.png"
+    media: [
+      { type: "youtube", src: "Vti0zEjJ9cU" },
+      { type: "image", src: "art/bm1.png" },
+      { type: "image", src: "art/bm2.png" },
+      { type: "image", src: "art/bm3.png" }
     ],
     highlights: [
-      "Built a dual-portal architecture with role-specific interfaces: Admin Panel (EJS) for operations management and Customer Panel (React + Vite) for booking journeys.",
-      "Developed complete admin workflows for managing movies, halls, screenings, and bookings, including protected routes and session-based authentication.",
-      "Implemented customer movie discovery and screening exploration flows, with detailed movie pages and screening-level booking entry points.",
-      "Created interactive seat-map booking with hall-based row/column generation and support for seat states.",
-      "Engineered reservation-safe seat booking logic to prevent duplicate seat purchases during concurrent requests.",
+      "Interactive Pin Mechanism - Programmed individual pins to be pushed in and pulled out, with each pin maintaining its own position and state on the rotating cylinder.", 
+      "Mechanical Music System - Implemented a rotating cylinder that detects pin positions and triggers corresponding musical strips, recreating the note-playing mechanism of a physical music box.", 
+      "Dynamic Musical Strips - Programmed individual strips to play audio notes and physically move when struck by active pins, synchronizing mechanical movement with the melody.", 
+      "Puzzle Configuration - Developed position-based puzzle logic to track player-configured pins and validate arrangements against predefined musical sequences.", 
+      "3D Mechanical Design - Modeled the music-box cylinder, pins, musical strips, and surrounding mechanism in Blender, then integrated the custom assets and interactions into Unity."
     ],
-    tools: [
-      "React",
-      "Vite",
-      "JavaScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "EJS",
-      "REST APIs",
-      "Session Authentication",
-      "CSS",
-      "Git/GitHub"
-    ]
+    tools: ["Unity", "C#", "Blender", "Raycast"," 3D Animation"]
+  },
+  {
+    id: "transmission",
+    title: "Transmission",
+    category: "Independent Developer | Brackeys Game Jam 2026.2",
+    description: "A 2D narrative investigation game developed in five days, where players take on the role of a lighthouse watch operator, monitoring vessel traffic, tuning radio frequencies, and uncovering a branching story through intercepted transmissions.",
+    github: "",
+    media: [
+      { type: "youtube", src: "d2pKG94bgH8" },
+      { type: "image", src: "art/tm1.png" },
+      { type: "image", src: "art/tm2.png" }
+    ],
+    highlights: [
+      "Interactive Radio System - Developed frequency tuning and transmission handling mechanics for monitoring incoming vessel communications.",
+      "Vessel Monitoring & Logbook - Implemented map and automatically updated logbook systems for tracking vessel routes, statuses, and discovered information.",
+      "Branching Narrative - Programmed state-driven dialogue and branching choices, allowing player decisions and discoveries to influence interactions and story outcomes.",
+      "2D Environment & Interface - Created and integrated custom 2D visual assets for the lighthouse environment and interactive interface."
+    ],
+    tools: ["Unity", "C#", "2D Game Design", "Narrative Systems"]
+  },
+  {
+    id: "cinehouse-booking-system",
+    title: "CineHouse",
+    category: "Full-Stack Developer | IS3108",
+    description:
+      "CineHouse is a full-stack cinema booking platform with separate customer and admin portals, supporting movie discovery, seat selection, booking, and cinema operations management.",
+    github: "",
+    media: [
+      { type: "image", src: "art/cinehouse1.png" },
+      { type: "image", src: "art/cinehouse2.png" },
+      { type: "image", src: "art/cinehouse3.png" },
+      { type: "image", src: "art/cinehouse4.png" }
+    ],
+    highlights: [
+      "Customer Booking Portal - Built the React portal for movie discovery, screening selection, seat booking, and confirmations.",
+      "Interactive Seat Selection - Developed dynamic seat maps with availability validation and multi-seat selection.",
+      "Concurrent Booking Handling - Prevented duplicate seat purchases during concurrent booking requests.",
+      "Admin Management Portal - Built an EJS admin portal with CRUD workflows for movies, halls, seats, screenings, and bookings.",
+      "Authentication & Access Control - Implemented session authentication, password hashing, and role-based middleware.",
+      "Data Validation - Validated hall and screening data to ensure consistent and active booking workflows.",
+    ],
+    tools: ["React", "Node.js", "Express", "MongoDB", "CSS"]
   },
   {
     id: "where-to-go-next",
     title: "Where To Go Next",
-    category: "Feature Developer | IS3108 Team Project",
+    category: "Feature Developer | IS3108",
     description:
-      "Travel planning web app featuring itinerary discovery, collaborative planning flows, and moodboard organization for trip inspiration.",
+      "A collaborative travel planning web app developed as part of a 5-person team, combining itinerary discovery, Pinterest-style moodboards, and AI-powered recommendations to help users organize and explore travel ideas.",
     github: "https://github.com/chloe472/wheretogonext",
-    images: [
-      "art/wtgn1.png",
-      "art/wtgn2.png",
-      "art/wtgn3.png",
-      "art/wtgn4.png"
+    media: [
+      { type: "image", src: "art/wtgn1.png" },
+      { type: "image", src: "art/wtgn2.png" },
+      { type: "image", src: "art/wtgn3.png" },
+      { type: "image", src: "art/wtgn4.png" }
     ],
     highlights: [
-      "Designed and iterated early product flows using Figma prototypes before implementation.",
-      "Implemented the Moodboard feature end-to-end, including folder and image management.",
-      "Built structured Moodboard folder interactions to support organized trip inspiration.",
-      "Integrated AI-powered image analysis to suggest relevant destinations from user-uploaded content.",
-      "Connected frontend components to backend APIs with authenticated request handling.",
-      "Developed collaborative planning flows, including shared interactions and real-time updates.",
-      "Contributed features within a MERN stack codebase following existing architecture patterns."
+        "User Flow & Prototyping - Designed high-fidelity Figma prototypes for moodboard and trip-planning flows.",
+        "Pinterest-Style Moodboard - Built the Moodboard feature with CRUD operations for folders, images, and user reactions.",
+        "REST API Development - Implemented 8 authenticated API routes for moodboard management and AI analysis.",
+        "AI-Powered Recommendations - Integrated Gemini image and text analysis for travel theme identification and destination recommendations.",
     ],
-    tools: ["React", "Vite", "JavaScript", "CSS", "Node.js", "Express", "MongoDB", "REST APIs", "Git/GitHub", "Figma"
+    tools: ["React", "Node.js", "Express", "MongoDB", "Figma"
     ]
   },
   {
     id: "last-tick",
     title: "The Last Tick",
     category: "Independent Developer | NoPoly Game Jam 2026",
-    description: "A 3D looping narrative puzzle enabling players to reconstruct sentences and trigger branching story outcomes.",
-    github: "https://github.com/Shesaurz/Last-Tick",
-    images: ["art/lasttick1.png","art/lasttick2.png","art/lasttick3.png","art/lasttick4.png"],
-    highlights: [
-      "Created a 3D looping narrative puzzle enabling players to reconstruct sentences and trigger branching story outcomes.",
-      "Integrated 3D assets, including props and interactive objects, into Unity using prefabs and materials.",
-      "Animated lighting and visual effects to enhance scene clarity and player orientation.",
-      "Developed interactive 3D systems to manage object interactions and tick-based progression loops.",
-      "Enhanced user experience with synchronized audio, UI, and animation feedback for player actions.",
-      "Programmed branching dialogue, event-driven triggers, and multiple endings based on player choices."
+    description: "A 3D puzzle game developed in four days, where players explore a study and solve four sequential text-based puzzles under a time limit.",
+    github: "",
+    media: [
+      { type: "youtube", src: "mS1JucsuRZE" },
+      { type: "image", src: "art/lasttick1.png" },
+      { type: "image", src: "art/lasttick2.png" },
+      { type: "image", src: "art/lasttick3.png" }
     ],
-    tools: ["Unity","C#","Blender","3D Systems","UI/UX Design"," 3D Animation"]
-  },
-  {
-    id: "blank-screen",
-    title: "Blank Screen",
-    category: "Independent Developer",
-    description: "Narrative-driven game integrating 2D and 3D elements with data-driven gameplay mechanics.",
-    github: "https://github.com/Shesaurz/Black-Screen",
-    images: ["art/blank1.png","art/blank2.png","art/blank3.png","art/blank4.png","art/blank5.png"],
     highlights: [
-      "Modeled and textured all 3D assets, integrating them into Unity with prefabs and materials.",
-      "Animated 2D elements and custom assets to support interactive storytelling and gameplay flow.",
-      "Built modular, data-driven architecture for dialogues, steps, and progression logic.",
-      "Engineered query-based mechanics for dynamic state updates and narrative progression.",
-      "Designed branching dialogue system with dynamic story state management.",
-      "Integrated audio and visual effects to reinforce narrative mood and immersion."
+      "3D Puzzle Gameplay - Developed four sequential text-based puzzles within an interactive study environment.",
+      "Time-Based Puzzle System - Programmed a 50-second puzzle timer using Scriptable Objects, raycasts, and event-driven triggers.",
+      "Dialogue & Game State - Implemented state-driven dialogue and gameplay systems for player input, events, animations, and narrative outcomes.",
+      "3D Environment & Assets - Created the full 3D environment in Blender, including props, materials, and animations.",
     ],
-    tools: ["Unity","C#","Blender","Visual Design","User Experience (UX)","2D/3D Integration"]
+    tools: ["Unity", "C#", "Blender", "Raycast"," 3D Animation"]
   },
   {
     id: "angklung",
-    title: "NUS Angklung Ensemble Website",
+    title: "NUSAE Website",
     category: "Independent Developer",
-    description: "Responsive website showcasing events, multimedia content, and interactive elements for the ensemble.",
+    description: "A responsive website designed and developed for NUS Angklung Ensemble AY25/26 to showcase events, recruitment, performances, and organizational information across desktop and mobile.",
     github: "https://github.com/Shesaurz/Angklung-Website",
-    images: ["art/angklung1.png","art/angklung2.png","art/angklung3.png","art/angklung4.png","art/angklung5.png"],
-    highlights: [
-      "Designed user flows and high-fidelity Figma prototypes to validate layout consistency.",
-      "Built user-facing UI/UX with animated transitions, scrolling galleries, and event-focused banners.",
-      "Developed interactive components such as flippable cards and clickable Angklung element with audio feedback.",
-      "Built responsive layouts for desktop and mobile with structured navigation, header, footer, and FAQ sections."
+    media: [
+      { type: "image", src: "art/angklung1.png" },
+      { type: "image", src: "art/angklung2.png" },
+      { type: "image", src: "art/angklung3.png" },
+      { type: "image", src: "art/angklung4.png" },
+      { type: "image", src: "art/angklung5.png" }
     ],
-    tools: ["HTML","CSS","JavaScript","Figma","Responsive Design","UI/UX"]
+    highlights: [
+        "Responsive Web Design - Designed and developed layouts, navigation, and interfaces for desktop and mobile.",
+        "Interactive Components - Implemented image carousels, animated transitions, and flippable information cards.",
+        "Content Management - Maintained the website throughout AY25/26, managing recruitment, events, and organizational content.",
+        "Interactive Multimedia - Integrated multimedia content and audio feedback for a more engaging user experience.",
+    ],
+    tools: ["HTML", "CSS", "JavaScript", "Figma", "UI/UX"]
   },
   {
     id: "ecommerce",
-    title: "E-Commerce Web Application",
+    title: "Auroramart",
     category: "Full-Stack Developer | Oct - Nov 2025",
-    description: "Full-stack e-commerce platform with customer shopping flows, checkout, and employee admin workflows.",
+    description: "A full-stack e-commerce web application developed as part of a 2-person team, featuring customer shopping and checkout flows alongside an employee management portal for store operations.",
     github: "",
-    images: ["art/ecommerce1.png","art/ecommerce2.png","art/ecommerce3.png"],
-    highlights: [
-      "Created high-fidelity Figma prototypes for shopping, checkout, and admin interaction workflows.",
-      "Built responsive front-end components for product browsing, cart, checkout, and admin dashboards.",
-      "Developed Django backend supporting user authentication, product management, order workflows, and admin user management.",
-      "Integrated front-end with backend APIs for seamless data flow and real-time updates.",
-      "Handled database modeling and queries for products, users, and orders.",
-      "Tested and iterated on front-end and backend workflows to improve usability and reliability."
+    media: [
+      { type: "image", src: "art/ecommerce1.png" },
+      { type: "image", src: "art/ecommerce2.png" },
+      { type: "image", src: "art/ecommerce3.png" }
     ],
-    tools: ["Django","Python","HTML","CSS","SQL","Figma","UI/UX"]
+    highlights: [
+        "Customer Shopping Experience - Developed responsive interfaces for product discovery, search, cart management, and checkout.",
+        "E-Commerce Prototyping - Designed high-fidelity Figma prototypes for product, cart, checkout, and order workflows.",
+        "Employee Management Portal - Built CRUD workflows for customers, products, vouchers, and orders using SQL.",
+        "AI Product Recommendations - Implemented a Python recommendation algorithm for contextual suggestions during cart and checkout.",
+    ],
+    tools: ["Python", "Django", "CSS", "SQL", "Figma"]
   },
   {
     id: "mice-n-maven",
     title: "Mice N Maven",
-    category: "Lead Developer | CP2106 Orbital (Apollo)",
-    description: "2D tap-based café idle simulation game with automated gameplay and interactive UI.",
+    category: "Lead Technical Developer | CP2106 Orbital (Apollo)",
+    description: "A 2D idle café simulation game developed as part of a 2-person team, featuring automated customer, cooking, seating, and upgrade progression systems built around a cumulative in-game economy.",
     github: "https://github.com/Shesaurz/Mice-N-Maven",
-    images: ["art/mice1.png","art/mice2.png","art/mice3.png","art/mice4.png"],
-    highlights: [
-      "Led a 2-person team to design and develop a 2D tap-based café idle simulation game.",
-      "Conducted iterative usability testing and refined wireframes based on user feedback.",
-      "Engineered core gameplay systems, including upgrade-based economy and automated progression loops.",
-      "Designed and implemented 2D assets and animations for smooth gameplay experience.",
-      "Applied 2D physics mini-games and intuitive UI to enhance player interaction.",
-      "Managed version control and project workflow using Git/GitHub."
+    media: [
+      { type: "image", src: "art/mice1.png" },
+      { type: "image", src: "art/mice2.png" },
+      { type: "image", src: "art/mice3.png" },
+      { type: "image", src: "art/mice4.png" }
     ],
-    tools: ["Unity","C#","Git/GitHub","2D Game Design","UI/UX Design","Animation"]
+    highlights: [
+      "Core Café Gameplay - Developed the customer loop, cooking, seating, and upgrade progression systems.",
+      "Automated Gameplay Systems - Engineered customer arrivals, dish preparation, dining, and coin collection across four seats.",
+      "Modular Game Architecture - Developed reusable gameplay systems using component-based design principles.",
+      "Progression & Economy - Implemented upgrade systems and a cumulative economy for automated progression.",
+      "Iterative Playtesting - Conducted six rounds of playtesting to refine gameplay and upgrade systems.",
+    ],
+    tools: ["Unity", "C#", "2D Game Design", "Game System"]
   }
 ];

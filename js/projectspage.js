@@ -10,11 +10,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const imagesDiv = document.getElementById("project-images");
-    project.images.forEach((src, i) => {
-        const img = document.createElement("img");
-        img.src = src;
-        img.className = "project-img" + (i === 0 ? " active" : "");
-        imagesDiv.insertBefore(img, imagesDiv.querySelector(".prev"));
+
+    project.media.forEach((item, i) => {
+
+        let media;
+
+        if (item.type === "youtube") {
+            media = document.createElement("iframe");
+            media.src = `https://www.youtube.com/embed/${item.src}`;
+            media.frameBorder = "0";
+            media.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+            media.allowFullscreen = true;
+        } else {
+            media = document.createElement("img");
+            media.src = item.src;
+        }
+
+        media.className = "project-img" + (i === 0 ? " active" : "");
+
+        imagesDiv.insertBefore(
+            media,
+            imagesDiv.querySelector(".prev")
+        );
     });
 
     const infoDiv = document.getElementById("project-info");
