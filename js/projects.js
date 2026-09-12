@@ -1,4 +1,22 @@
 const projects = [
+  { id: "little-maker", 
+    title: "Little Maker", 
+    category: "Independent Developer", 
+    description: "A 3D doll assembly prototype centered around physics-based object manipulation, where players assemble and customize a doll by positioning, rotating, and locking individual components.", 
+    github: "", 
+    media: [ 
+      { type: "youtube", src: "l550jXHZWYI" },
+      { type: "image", src: "art/doll1.png" }, 
+      { type: "image", src: "art/doll2.png" }, 
+      { type: "image", src: "art/doll3.png" } 
+    ], 
+    highlights: [ 
+      "Object Manipulation - Developed physics-based pickup, throwing, and object handling mechanics for interacting with individual doll components.", 
+      "Snap & Placement System - Programmed collision-driven placement that detects component categories and automatically snaps parts to designated workspace positions.", 
+      "Assembly System - Implemented part locking mechanics that allow players to confirm component positions and progressively assemble the doll into a unified object.", 
+      "Raycast Interaction - Developed camera-based raycast interactions for selecting, rotating, locking, and manipulating objects directly within the 3D environment.", 
+      "Packing System - Created a staged packing workflow that transitions the assembled product through cardboard placement, opening, closing, and delivery states." ], 
+    tools: ["Unity", "C#", "Physics", "Raycast", "RigidBody"] },
   {
     id: "broken-melody",
     title: "Broken Melody",
