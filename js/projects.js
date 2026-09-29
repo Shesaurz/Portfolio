@@ -1,21 +1,4 @@
 const projects = [
-  { id: "kraken", 
-    title: "Kraken", 
-    category: "Independent Developer",
-    description: "A cooperative 3D horror game prototype set aboard an offshore oil rig, where players work together to complete mechanical tasks and maintain shared systems while exploring an isolated environment.",
-    github: "",
-    media: [ 
-      { type: "image", src: "art/kraken1.png" },
-      { type: "image", src: "art/kraken2.png" }
-    ],
-    highlights: [
-      "Interactive Environment - Designed an interactive offshore oil-rig environment with objects and elements that respond to player interaction.",
-      "Task System - Developed interactive tasks that guide players through objectives within the environment.",
-      "Dialogue System - Implemented character dialogue to support narrative interactions and progression within the game.",
-      "3D Environment & Assets - Created and integrated custom 3D environmental assets, props, materials, and textures.",
-    ],
-    tools: ["Roblox Studio", "Lua", "3D Modeling", "Game Design"]
-  },
   { id: "little-maker", 
     title: "Little Maker", 
     category: "Independent Developer", 
